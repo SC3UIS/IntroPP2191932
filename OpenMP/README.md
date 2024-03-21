@@ -1,6 +1,7 @@
 # IntroPP2191932
 #BinarySearch
-![Binary_search_tree svg](https://github.com/SC3UIS/IntroPP2191932/assets/91171649/b9482b0a-5e3c-4edd-9833-3db3a24e4669)
+![image](https://github.com/SC3UIS/IntroPP2191932/assets/91171649/a68b128b-d767-4fe8-bfd8-c4c1f0f1fe6e)
+
 
 # Contenido
 
