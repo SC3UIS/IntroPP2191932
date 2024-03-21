@@ -1,5 +1,5 @@
 # IntroPP2191932
-#BinarySearch
+# BinarySearch
 ![image](https://github.com/SC3UIS/IntroPP2191932/assets/91171649/a68b128b-d767-4fe8-bfd8-c4c1f0f1fe6e)
 
 
