@@ -20,4 +20,4 @@ La búsqueda binaria es un algoritmo eficiente para encontrar un elemento en una
 `pragma omp parallel for` paraleliza el bucle externo del algoritmo de ordenamiento de burbuja, distribuyendo la ejecución del bucle entre múltiples hilos, mientras que las cláusulas `private` y `shared` se utilizan para gestionar las variables privadas y compartidas entre los hilos, respectivamente. Esto permite que el algoritmo de ordenamiento se ejecute más rápido al utilizar múltiples hilos para procesar los datos en paralelo.
 
 
-Ten en cuenta que para ejecutar el
+
