@@ -23,7 +23,7 @@ La búsqueda binaria es un algoritmo eficiente para encontrar un elemento en una
 
 Para las pruebas de rendimiento se usaron un tamaño de 5000 elementos y así mismo se uso ese tamaño para la generación aleatoria de números.
 
-# Secuencial
+## Secuencial
 Para la ejecución del programa se usó la siguiente secuencia de comandos:
 ```
 [amalvareza@guaneExa OpenMP]$ srun -n 10 -w ExaDELL --pty /bin/bash
@@ -34,6 +34,25 @@ Para la ejecución del programa se usó la siguiente secuencia de comandos:
 Como output se tiene la `Lista Generada` y la `Lista ordenada` luego se tiene la key que se eligió aleatoriamente seguido de esto está la respuesta de si se encontró o no la Key, en este caso sí se encontró.
 el tiempo empleado en la ejecución es el siguiente: 
 ![image](https://github.com/SC3UIS/IntroPP2191932/assets/91171649/952a51f7-4964-45b8-a435-36fa5fe9c444)
+
+##Paralelo
+Para la ejecución y visualización de resultados se usaron los siguientes comandos:
+```
+[amalvareza@ExaDELL OpenMP]$ sbatch BinarySearch.sbatch
+[amalvareza@ExaDELL OpenMP]$ cat output_BinarySearch.txt
+```
+Como output se obtuvo lo siguiente:
+```
+Generating random elements...
+
+Randomly selected key: 2104
+Key not found
+Total execution time: 0.015812 seconds
+```
+# Lo que se concluyó
+
+La paralelización del algoritmo mediante OpenMP ha permitido reducir significativamente el tiempo de ejecución. Aunque en este caso particular la clave no se encontró, el tiempo de ejecución fue menor en comparación con la ejecución secuencial.
+
 
 
 
