@@ -3,7 +3,7 @@
 #include <time.h>
 #include <omp.h>
 
-#define SIZE 5000  //Se define el tama駉 en 5000
+#define SIZE 5000  //Se define el tama帽o en 5000
 
 void binary_search(int [], int, int, int);
 void bubble_sort(int [], int);
@@ -14,9 +14,9 @@ int main() {
 
     // Generar elementos aleatorios
     printf("Generating random elements...\n");
-    srand(time(NULL)); // Semilla de generaci髇 de n鷐eros aleatorios
+    srand(time(NULL)); // Semilla de generaci贸n de n煤meros aleatorios
     for(i = 0; i < SIZE; i++) {
-        list[i] = rand() % 5000; // Genera n鷐eros aleatorios entre 0 y 99
+        list[i] = rand() % 5000; // Genera n煤meros aleatorios entre 0 y 5000
     }
 
     double start_time = omp_get_wtime(); // Guardar el tiempo de inicio
@@ -29,10 +29,10 @@ int main() {
 
     printf("\n");
     printf("Randomly selected key: %d\n", key);
-    binary_search(list, 0, SIZE - 1, key); // Ajuste del l韒ite superior del rango
+    binary_search(list, 0, SIZE - 1, key); // Ajuste del l铆mite superior del rango
 
-    double end_time = omp_get_wtime(); // Guardar el tiempo de finalizaci髇
-    printf("Total execution time: %f seconds\n", end_time - start_time); // Imprimir el tiempo de ejecuci髇
+    double end_time = omp_get_wtime(); // Guardar el tiempo de finalizaci贸n
+    printf("Total execution time: %f seconds\n", end_time - start_time); // Imprimir el tiempo de ejecuci贸n
 
     return 0;
 }
@@ -55,7 +55,7 @@ void bubble_sort(int list[], int size) {
 void binary_search(int list[], int lo, int hi, int key) {
     int mid;
 
-    if (lo <= hi) { // Corregido el operador de comparaci髇 para incluir el caso en que lo == hi
+    if (lo <= hi) { // Corregido el operador de comparaci贸n para incluir el caso en que lo == hi
         mid = lo + (hi - lo) / 2; // Corregido para evitar desbordamientos
         if (list[mid] == key) {
             printf("Key found at index %d\n", mid);
