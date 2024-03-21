@@ -58,7 +58,7 @@ Key not found
 Total execution time: 0.015812 seconds
 ```
 # Lo que se concluyó
-Teniendo en cuenta que inicialmente se probó con los valores propuestos por el profesor (50 elementos) pero este número era muy pequeño y no se podía notar una diferencia entre tiempos significativa, por lo cual
+Teniendo en cuenta que inicialmente se probó con los valores propuestos por el profesor (50 elementos) pero este número era muy pequeño y no se pudó notar una diferencia entre tiempos significativa, por lo cual
 se optó por usar una lista de 5000 elementos(aunque se pudieron usar más) 
 
 La paralelización del algoritmo mediante OpenMP ha permitido reducir significativamente el tiempo de ejecución. Aunque en este caso particular la clave no se encontró, el tiempo de ejecución fue menor en comparación con la ejecución secuencial.
