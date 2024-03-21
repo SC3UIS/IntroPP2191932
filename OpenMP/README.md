@@ -25,9 +25,11 @@ Para las pruebas de rendimiento se usaron un tamaño de 5000 elementos y así mi
 
 # Secuencial
 Para la ejecución del programa se usó la siguiente secuencia de comandos:
+```
 [amalvareza@guaneExa OpenMP]$ srun -n 10 -w ExaDELL --pty /bin/bash
 [amalvareza@ExaDELL OpenMP]$ gcc -fopenmp BinarySearch.c -o BinarySearch
 [amalvareza@ExaDELL OpenMP]$ ./BinarySearch
+```
 
 Como output se tiene la `Lista Generada` y la `Lista ordenada` luego se tiene la key que se eligió aleatoriamente seguido de esto está la respuesta de si se encontró o no la Key, en este caso sí se encontró.
 el tiempo empleado en la ejecución es el siguiente: 
