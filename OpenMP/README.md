@@ -40,7 +40,7 @@ Key found at index 607
 Time taken: 0.042287 seconds
 
 ```
-##Paralelo
+## Paralelo
 Para la ejecución y visualización de resultados se usaron los siguientes comandos:
 ```
 [amalvareza@ExaDELL OpenMP]$ sbatch BinarySearch.sbatch
