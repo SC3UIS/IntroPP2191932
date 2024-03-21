@@ -33,8 +33,13 @@ Para la ejecución del programa se usó la siguiente secuencia de comandos:
 
 Como output se tiene la `Lista Generada` y la `Lista ordenada` luego se tiene la key que se eligió aleatoriamente seguido de esto está la respuesta de si se encontró o no la Key, en este caso sí se encontró.
 el tiempo empleado en la ejecución es el siguiente: 
-![image](https://github.com/SC3UIS/IntroPP2191932/assets/91171649/952a51f7-4964-45b8-a435-36fa5fe9c444)
+```
+Automatically chosen key: 615
+Key found at index 607
 
+Time taken: 0.042287 seconds
+
+```
 ##Paralelo
 Para la ejecución y visualización de resultados se usaron los siguientes comandos:
 ```
