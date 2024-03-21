@@ -1,0 +1,5 @@
+Generating random elements...
+
+Randomly selected key: 2091
+Key not found
+Total execution time: 0.016259 seconds
