@@ -1,5 +1,6 @@
 # BinarySearch
-![pngwing com](https://github.com/SC3UIS/IntroPP2191932/assets/91171649/a2c17541-1273-43d9-9cdc-a3c42d4b7253)
+
+<img width="226" alt="titleImage" src="https://github.com/SC3UIS/IntroPP2191932/assets/91171649/6272d2de-ab09-40c3-b6f3-480b2496818c">
 
 
 
