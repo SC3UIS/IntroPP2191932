@@ -38,8 +38,8 @@ Dentro de cada directorio, encontrarás los siguientes archivos:
 
 `omp_BinarySearch.c`: Este archivo contiene la implementación de la búsqueda binaria utilizando OpenMP.
 
-## Instrucciones de Compilación
-
+Instrucciones de Compilación
+=========
 A continuación se describen los pasos necesarios para compilar el código proporcionado en el archivo `BinarySearch.c`. 
 
 
