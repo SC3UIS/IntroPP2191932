@@ -164,21 +164,21 @@ Time taken: 0.018498 seconds
 
 ### Versión secuencial (BinarySearch.c):
 
-Tiempo de ejecución: 0.213603 segundos.
+Tiempo de ejecución: `0.213603` segundos.
 Esta es la versión más lenta de las tres, ya que se ejecuta de manera secuencial en un solo hilo/proceso.
 
 
 ### Versión OpenMP (omp_BinarySearch.c):
 
-Tiempo de ejecución: 0.019076 segundos.
-Esta versión paralela utilizando OpenMP es significativamente más rápida que la versión secuencial, con un tiempo de ejecución aproximadamente 11 veces más rápido.
+Tiempo de ejecución: `0.019076` segundos.
+Esta versión paralela utilizando OpenMP es significativamente más rápida que la versión secuencial, con un tiempo de ejecución aproximadamente `11 veces más rápido`.
 OpenMP aprovecha el paralelismo a nivel de subprocesos (threads).
 
 
 ### Versión MPI (mpi_BinarySearch.c):
 
-Tiempo de ejecución: 0.018498 segundos.
-Esta versión paralela utilizando MPI es ligeramente más rápida que la versión OpenMP, con un tiempo de ejecución aproximadamente 1.03 veces más rápido.
+Tiempo de ejecución: `0.018498` segundos.
+Esta versión paralela utilizando MPI es ligeramente más rápida que la versión OpenMP, con un tiempo de ejecución aproximadamente `1.03 veces más rápido`.
 MPI aprovecha el paralelismo a nivel de procesos, lo que permite una mayor escalabilidad al distribuir el trabajo en varios nodos/máquinas.
 
 
