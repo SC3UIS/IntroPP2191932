@@ -80,7 +80,7 @@ Podemos utilizar las flags que deseemos para diferentes niveles de optimización
 
 Tenemos la posibilidad de ejecutar el programa de manera interactiva utilizando el comando `mpirun`. A continuación, se explican diversas alternativas para ejecutar el programa con distintas configuraciones iniciales y valores de tiempo. Asegúrate de haber seguido las indicaciones de compilación proporcionadas anteriormente antes de proceder.
 
-### 1. Valores Predeterminados
+###  Valores Predeterminados
 
 Para iniciar el programa con la configuración estándar, emplea los siguientes comandos:
 
@@ -90,6 +90,42 @@ mpic++ mpi_BinarySearch.c -o mpi_BinarySearch
 ```bash
 mpirun -np 4 ./mpi_BinarySearch ./time
 ```
+
+## Ejecución en Modo Pasivo
+
+Para llevar a cabo la ejecución del programa en modo pasivo mediante sbatch y asegurar la carga del módulo MPI recomendado antes de la ejecución, es necesario seguir este procedimiento:
+
+### 1. Elaborar un Script de Trabajo
+
+Generar un archivo de script de trabajo, por ejemplo, denominado `mpi_BinarySearch.sbatch`, utilizando un editor de texto. El contenido del archivo debe ser similar al siguiente ejemplo:
+```bash
+#!/bin/bash
+#SBATCH --job-name=MPI_BinarySearch
+#SBATCH --nodes=2
+#SBATCH --ntasks-per-node=1
+#SBATCH --cpus-per-task=8
+#SBATCH --output=output_mpi_BinarySearch.txt%j.out
+#SBATCH --error=error_mpi_BinarySearch.err%j.err
+
+# Cargar módulos de gcc y mpi
+module load devtools/gcc/6.2.0
+module load devtools/mpi/openmpi/3.1.4
+
+# Compilar el archivo mpi_BinarySearch.c
+mpicc mpi_BinarySearch.c -o mpi_BinarySearch
+
+# Ejecutar el programa
+mpiexec -np 2 ./mpi_BinarySearch
+```
+
+### 2. Envío del Trabajo a Slurm
+
+Emplear el comando "sbatch" para enviar el trabajo a Slurm. El script será sometido y ejecutado de acuerdo con las configuraciones especificadas en el script de trabajo. Asegúrate de estar en el directorio donde el script se encuentra ubicado:
+
+```bash 
+sbatch mpi_BinarySearch.sbatch
+```
+
 
 
 
