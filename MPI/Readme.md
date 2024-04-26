@@ -126,6 +126,46 @@ Emplear el comando "sbatch" para enviar el trabajo a Slurm. El script será some
 sbatch mpi_BinarySearch.sbatch
 ```
 
+Comparativa en tiempos de ejecución
+=========
+
+Se realizará una comparativa de tiempos de ejecución entre el archivo original, la versión usando openMP y la versión usando MPI.
+
+`BinarySearch.c`
+Output:
+```
+Automatically chosen key: 4511
+Key found at index 4555
+
+Time taken: 0.213603 seconds
+```
+`omp_BinarySearch.c`
+
+Output:
+```
+Generating random elements...
+
+Randomly selected key: 2566
+Key not found
+Total execution time: 0.019076 seconds
+
+```
+
+`mpi_BinarySearch.c`
+
+Output:
+```
+Generating random elements...
+Automatically chosen key: 1882
+Key not found
+
+Time taken: 0.018498 seconds
+```
+
+
+
+
+
 
 
 
