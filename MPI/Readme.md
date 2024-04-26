@@ -1,9 +1,6 @@
 # BinarySearch
 
-![pngwing com (1)](https://github.com/SC3UIS/IntroPP2191932/assets/91171649/20b91dbc-c7b4-4051-b9ae-52f295e7adbf)
-
-
-
+![pngwing com (4)](https://github.com/SC3UIS/IntroPP2191932/assets/91171649/827282ed-9db5-44b2-9d40-03bd9b08fb45)
 
 ## Algoritmo de búsqueda binaria
 
