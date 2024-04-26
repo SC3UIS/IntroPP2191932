@@ -23,6 +23,7 @@ Contenido
 =========
 
 Dentro de cada directorio, encontrarás los siguientes archivos:
+
 `BinarySearch.c`: Este archivo contiene la implementación del algoritmo de búsqueda binaria.
 
 `makefile`: Este archivo es un script de Makefile utilizado para compilar y construir el proyecto.
@@ -31,7 +32,7 @@ Dentro de cada directorio, encontrarás los siguientes archivos:
 
 `mpi_BinarySearch.c`: Este archivo contiene la implementación de la búsqueda binaria utilizando MPI.
 
-`mpi_BinarySearch.sbatch`: Este archivo es un script de lotes utilizado para enviar trabajos MPI a un sistema de gestión de recursos.
+`mpi_BinarySearch.sbatch`: Este archivo es un script de lotes utilizado para enviar trabajos MPI al cluster.
 
 `omp_BinarySearch`: Este archivo es un ejecutable compilado que implementa la búsqueda binaria utilizando OpenMP.
 
