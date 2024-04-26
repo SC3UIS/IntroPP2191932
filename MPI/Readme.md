@@ -18,3 +18,24 @@ La búsqueda binaria es un algoritmo eficiente para encontrar un elemento en una
 | 7.   | **Medición del Tiempo:** Se mide el tiempo que ha tardado la iteración de la simulación. |
 | 8.   | **Salida de Resultados Finales:** Se imprime el tiempo que tomó la simulación y se muestra un valor de referencia en la posición (5, 5) del campo de temperatura final. |
 | 9.   | **Finalización y Limpieza:** Se escribe el campo de temperatura final en un archivo y se realiza una limpieza de recursos. MPI se cierra con `MPI_Finalize()`. |
+
+Contenido
+=========
+
+Dentro de cada directorio, encontrarás los siguientes archivos:
+
+*   **BinarySearch.c**: Este archivo contiene el código fuente en C de una implementación de búsqueda binaria secuencial.
+   
+*   **omp_BinarySearch.c**: Este archivo contiene una versión paralelizada del código de búsqueda binaria utilizando OpenMP.
+   
+*   **mpi_BinarySearch.c**: Este archivo contiene una versión paralelizada del código de búsqueda binaria utilizando MPI (Message Passing Interface).
+   
+*   **BinarySearch.sbatch**: Este archivo de secuencia de comandos SLURM se utiliza para ejecutar el programa secuencial en el clúster.
+   
+*   **mpi_BinarySearch.sbatch**: Este archivo de secuencia de comandos SLURM se utiliza para ejecutar el programa paralelizado con MPI en el clúster.
+   
+*   **output_BinarySearch.txt**: Este archivo contiene la salida generada por la ejecución del programa secuencial.
+   
+*   **output_mpi_BinarySearch.txt**: Este archivo contiene la salida generada por la ejecución del programa paralelizado con MPI.
+   
+*   **makefile**: Este archivo es un Makefile que contiene reglas para compilar y ejecutar los diferentes programas.
