@@ -76,6 +76,22 @@ make
 
 Podemos utilizar las flags que deseemos para diferentes niveles de optimización, como: `-O1`, `-O2`, `-O3`, `-Ofast`, `-Og`, etc.
 
+## Ejecución Interactiva
+
+Tenemos la posibilidad de ejecutar el programa de manera interactiva utilizando el comando `mpirun`. A continuación, se explican diversas alternativas para ejecutar el programa con distintas configuraciones iniciales y valores de tiempo. Asegúrate de haber seguido las indicaciones de compilación proporcionadas anteriormente antes de proceder.
+
+### 1. Valores Predeterminados
+
+Para iniciar el programa con la configuración estándar, emplea los siguientes comandos:
+
+```bash
+mpic++ mpi_BinarySearch.c -o mpi_BinarySearch
+```
+```bash
+mpirun -np 4 ./mpi_BinarySearch ./time
+```
+
+
 
 
 
