@@ -24,18 +24,4 @@ Contenido
 
 Dentro de cada directorio, encontrarás los siguientes archivos:
 
-*   `BinarySearch.c`: Este archivo contiene el código fuente en C de una implementación de búsqueda binaria secuencial.
-   
-*   `omp_BinarySearch.c`: Este archivo contiene una versión paralelizada del código de búsqueda binaria utilizando OpenMP.
-   
-*   `mpi_BinarySearch.c`: Este archivo contiene una versión paralelizada del código de búsqueda binaria utilizando MPI (Message Passing Interface).
-   
-*   `BinarySearch.sbatch`: Este archivo de secuencia de comandos SLURM se utiliza para ejecutar el programa secuencial en el clúster.
-   
-*   `mpi_BinarySearch.sbatch`: Este archivo de secuencia de comandos SLURM se utiliza para ejecutar el programa paralelizado con MPI en el clúster.
-   
-*   `output_BinarySearch.txt`: Este archivo contiene la salida generada por la ejecución del programa secuencial.
-   
-*   `output_mpi_BinarySearch.txt`: Este archivo contiene la salida generada por la ejecución del programa paralelizado con MPI.
-   
-*   `makefile`: Este archivo es un Makefile que contiene reglas para compilar y ejecutar los diferentes programas.
+
