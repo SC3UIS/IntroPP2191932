@@ -42,5 +42,41 @@ Instrucciones de Compilación
 =========
 A continuación se describen los pasos necesarios para compilar el código proporcionado en el archivo `BinarySearch.c`. 
 
+### 1. Ingresar al Entorno de MPI
+
+Para comenzar, es necesario acceder a un entorno que sea compatible con MPI. En general, esto involucra el uso de comandos como `srun` para iniciar procesos MPI. Como ejemplo, puedes iniciar un entorno con 24 procesos de la siguiente manera:
+
+```bash
+srun -n X --pty /bin/bash
+```	
+
+Siendo `X` el numero de hilos a utilizar del cluster de GUANE 
+
+### 2. Cargar los Módulos Necesarios
+
+Luego, debemos cargar los módulos necesarios, o sea, el módulo OpenMPI:
+
+```bash
+module load devtools/mpi/openmpi/3.1.4
+```
+
+### 3. Limpieza y Compilación
+
+Para compilar el programa, podemos utilizar el archivo Makefile que se proporciona. Pero debemos eliminar archivos temporales generados previamente, para eso ejecutamos un make clean:
+
+```bash
+make clean
+```
+
+Luego de la limpieza, procede a compilar el código utilizando el siguiente comando:
+
+```bash
+make
+```
+
+Podemos utilizar las flags que deseemos para diferentes niveles de optimización, como: `-O1`, `-O2`, `-O3`, `-Ofast`, `-Og`, etc.
+
+
+
 
 
