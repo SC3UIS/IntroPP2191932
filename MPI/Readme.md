@@ -181,7 +181,8 @@ Tiempo de ejecución: `0.018498` segundos.
 Esta versión paralela utilizando MPI es ligeramente más rápida que la versión OpenMP, con un tiempo de ejecución aproximadamente `1.03 veces más rápido`.
 MPI aprovecha el paralelismo a nivel de procesos, lo que permite una mayor escalabilidad al distribuir el trabajo en varios nodos/máquinas.
 
-
+### Aclaración:
+Para openMP y MPI se mantuvo la misma cantidad de datos (5000 elementos) 
 
 
 
